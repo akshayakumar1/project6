@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> opening jijna operation!..</h1>
+        <h1> x valus is {{x}}</h1>
+        <h1> y valus is {{y}}</h1>
+        <h1> z valus is {{z}}</h1>
+        <!-- <h1> f valus is {{f}}</h1> -->
+    </center>
+    <!-- using if else -->
+    <!-- <center>
+                    <h1> we are comparing x & y</h1>
+        {% if x > y %}
+            <h1>x valuse {{x}} is gratter</h1>
+        {% else %}
+            <h1>y valuse {{y}} is gratter</h1>
+        {% endif %}
+        
+    </center> -->
+
+<!-- ussing if-elif -->
+
+    <!-- <center>
+        <h1> we are comparing x , y & z </h1>
+    {% if x > y and x > z %}
+        <h1>x valuse {{x}} is gratter</h1>
+    {% elif z > y %}
+        <h1>z value {{z}} is gratter </h1>
+    
+    {% else %}
+        <h1>y valuse {{y}} is gratter</h1>
+    {% endif %}
+
+    </center> -->
+<!-- using nested if -->
+    <center>
+        <h1> we are comparing x , y & z </h1>
+    {% if x > y  %}
+        {% if x > z %}
+            <h1>x valuse {{x}} is gratter</h1>
+        {% else %}
+            <h1> z valus {{z}} is gratter</h1>
+        {% endif %}
+    {% elif z > y %}
+        <h1>z value {{z}} is gratter </h1>
+    
+    {% else %}
+        <h1>y valuse {{y}} is gratter</h1>
+    {% endif %}
+
+    </center>
+</body>
+</html>l
